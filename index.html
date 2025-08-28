@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MotionTech | HoloBand</title>
+  <meta name="description" content="HoloBand, a pulseira que projeta interfaces holográficas interativas. Tecnologia MotionTech." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+  <header class="mt-header" role="banner">
+    <div class="container">
+      <h1 class="brand" aria-label="MotionTech HoloBand">
+        <span class="brand__logo" aria-hidden="true">◆</span> HoloBand
+      </h1>
+      <p class="tagline" aria-live="polite">Seu mundo, projetado no ar.</p>
+      <a class="cta" href="#features">Explorar recursos</a>
+    </div>
+    <div class="bg-grid" aria-hidden="true"></div>
+  </header>
+
+  <main id="main" class="mt-main" tabindex="-1">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <h2 id="hero-title">Interaja além da tela</h2>
+          <p>A <strong>HoloBand</strong> projeta interfaces holográficas responsivas, controladas por gestos naturais. Produtividade, saúde e criatividade — tudo ao alcance do seu movimento.</p>
+          <div class="hero__actions">
+            <button class="btn btn--primary" id="btnDemo" aria-controls="product-visual" aria-expanded="false">Ver demonstração</button>
+            <button class="btn btn--ghost" id="btnSpin">Girar 3D</button>
+          </div>
+        </div>
+        <figure class="hero__visual" id="product-visual" aria-label="Visual do produto HoloBand">
+          <img src="images/holoband.svg" alt="Pulseira HoloBand projetando hologramas" class="product" />
+          <figcaption class="visually-hidden">Animação demonstra hologramas emergindo da HoloBand.</figcaption>
+          <div class="holo holo--ring" aria-hidden="true"></div>
+          <div class="holo holo--pulse" aria-hidden="true"></div>
+        </figure>
+      </div>
+    </section>
+
+    <section id="features" class="features" aria-labelledby="features-title">
+      <div class="container">
+        <h2 id="features-title">Recursos principais</h2>
+        <ul class="features__list">
+          <li class="feature">
+            <div class="icon">⚡</div>
+            <h3>Resposta instantânea</h3>
+            <p>Gestos com latência ultrabaixa para comandos naturais.</p>
+          </li>
+          <li class="feature">
+            <div class="icon">🧠</div>
+            <h3>IA contextual</h3>
+            <p>Interfaces que se adaptam ao que você está fazendo.</p>
+          </li>
+          <li class="feature">
+            <div class="icon">🏃</div>
+            <h3>Saúde & movimento</h3>
+            <p>Métricas corporais e coaching ativo em tempo real.</p>
+          </li>
+          <li class="feature">
+            <div class="icon">🔋</div>
+            <h3>Bateria para o dia todo</h3>
+            <p>Carregamento rápido e eficiência energética.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="mt-footer" role="contentinfo">
+    <div class="container">
+      <p>© <span id="year"></span> MotionTech — Contato: <a href="mailto:hello@motiontech.example">hello@motiontech.example</a></p>
+      <nav aria-label="Links sociais">
+        <a href="#" class="social">Twitter</a>
+        <a href="#" class="social">Instagram</a>
+        <a href="#" class="social">LinkedIn</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- GSAP via CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
